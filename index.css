@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* body => #root => .app => .name => .letter => .line-star => .star */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  background-color: #fff; 
+  background-image: 
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============================================
+  App
+============================================= */
+.app {
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+/* ==============================
+  Name
+================================= */
+.name {
+  display: flex;
+
+  margin-top: 6rem;
+}
+
+/* --- Letter --- */
+.letter {
+  width: 9rem;  height: 9rem;
+}
+
+
+.line-star {
+  background-color: rgba(2, 73, 89, 0);
+  width: 5px;  height: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  animation: half-opaque 2s forwards 4.5s,
+             full-opaque 2s forwards 6.5s;
+}
+
+/* --- S --- */
+.s .line-star {
+  height: 80px;
+}
+
+.s .line-star:last-child {
+  transform: translate(70px, -75px) rotate(55deg);
+}
+
+.s .line-star:nth-child(2) {
+  height: 70px;
+
+  transform-origin: 0 100%;
+  transform: translate(105px, -60px) rotate(-70deg);
+}
+
+.s .line-star:first-child {
+  transform: translate(70px, -4px) rotate(55deg);
+}
+
+/* --- O --- */
+.o .line-star {
+  height: 100px;
+}
+
+.o .line-star:last-child {
+  transform: translate(75px, -130px) rotate(75deg);
+}
+
+.o .line-star:nth-child(2) {
+  transform: translate(93px, -85px) rotate(-40deg);
+}
+
+.o .line-star:first-child {
+  height: 105px;;
+
+  transform-origin: 100% 100%;
+  transform: translate(24px, 29px) rotate(18.5deg);
+}
+
+/* --- H --- */
+.h .line-star {
+  height: 50px;
+}
+
+.h .line-star:first-child {
+  height: 125px;
+
+  transform-origin: 100% 100%;
+  transform: translate(45px, 15px) rotate(-5deg);
+}
+
+.h .line-star:nth-child(2) {
+  transform-origin: 50% 100%;
+  transform: translate(43px, -85px) rotate(85deg);
+}
+
+.h .line-star:last-child {
+  transform-origin: 100% 100%;
+  transform: translate(90px, -136px) rotate(150deg);
+}
+
+/* --- A --- */
+.a .line-star {
+  height: 100px;
+}
+
+.a .line-star:last-child {
+  transform: translate(72px, -160px) rotate(75deg);
+}
+
+.a .line-star:nth-child(2) {
+  height: 120px;
+
+  transform: translate(105px, -95px) rotate(-30deg);
+}
+
+.a .line-star:first-child {
+  height: 115px;
+
+  transform-origin: 100% 100%;
+  transform: translate(22px, 19px) rotate(25deg);
+}
+
+/* --- Star --- */
+.star {
+  width: 12px;
+
+  animation: spin-move 4s both 2s cubic-bezier(.8,.95,.88,1.06);
+}
+
+.name:hover .star {
+  transform: translateY(-350px);
+}
+
+/* ============================================
+  Moon
+============================================= */
+.moon {
+  width: 100px;
+
+  position: absolute;
+  top: -100px;
+
+  transform: translateX(-300px);
+
+  opacity: 0;
+
+  animation: shine 2s forwards 6.5s;
+}
+
+/* --- Greeting --- */
+.greeting {
+  font: 2rem 'Pacifico', cursive;
+
+  position: relative;
+  top: 4rem;
+
+  color: #F24738;
+  
+  opacity: 0;
+
+  animation: greeting 1s forwards 8.5s;
+}
+
+/* ============================================
+  Keyframes
+============================================= */
+@keyframes spin-move {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) rotate(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(100px) rotate(10turn);
+  }
+
+  100% {
+    transform: translateY(-330px) rotate(20turn);
+  }
+}
+
+@keyframes half-opaque {
+  100% {
+    background-color: rgba(2, 73, 89, .1);
+  }
+}
+
+@keyframes full-opaque {
+  0% {
+    background-color: rgba(2, 73, 89, .1);
+  }
+
+  100% {
+    background-color: rgba(2, 73, 89, 1);
+  }
+}
+
+@keyframes shine {
+  100% {
+    top: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes greeting {
+  100% {
+    opacity: 1;
+  }
+}
