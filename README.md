@@ -14,10 +14,10 @@ You will need [Git](https://git-scm.com/) to clone this project.
 <b>Steps</b>
 ```
 # Clone this repository
-$ git clone https://github.com/moaaz-bhnas/canvas-circles.git
+$ git clone https://github.com/moaaz-bhnas/soha-friendversary.git
 
 # Go into the repository
-$ cd canvas-circles
+$ cd soha-friendversary
 
 # Run
 // Open index.html file on your preferred browser
