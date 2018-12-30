@@ -8,10 +8,10 @@ https://moaaz-bhnas.github.io/soha-friendversary/
 ![Live Preview](https://media.giphy.com/media/OQHvOQ6oVB6m8rcmdd/giphy.gif)
 
 ## Install
-<b>Requirements</b>  
+<b>Requirements:</b>  
 You will need [Git](https://git-scm.com/) to clone this project.  
 
-<b>Steps</b>
+<b>Steps:</b>
 ```
 # Clone this repository
 $ git clone https://github.com/moaaz-bhnas/soha-friendversary.git
