@@ -1,5 +1,5 @@
 # Friendversary
-On the occasion of the day a very important friend (Soha) and I became friends on Facebook. One of a series of projects I did to cheer up my friends :D.
+On the occasion of the day a very important friend (Soha) and I became friends on Facebook. One of a series of projects I built using CSS3 transforms and animation and SVG animation to cheer up my friends :D.
 
 ## Live
 https://moaaz-bhnas.github.io/soha-friendversary/
