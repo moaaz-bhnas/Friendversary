@@ -1,1 +1,24 @@
-# friendversary
+# Friendversary
+On the occasion of the day a very important friend (Soha) and I became friends on Facebook. One of a series of projects I did to cheer up my friends :D.
+
+## Live
+https://moaaz-bhnas.github.io/soha-friendversary/
+
+## Screenshots
+![Live Preview](https://media.giphy.com/media/OQHvOQ6oVB6m8rcmdd/giphy.gif)
+
+## Install
+<b>Requirements</b>
+You will need [Git](https://git-scm.com/) to clone this project.  
+
+<b>Steps</b>
+```
+# Clone this repository
+$ git clone https://github.com/moaaz-bhnas/canvas-circles.git
+
+# Go into the repository
+$ cd canvas-circles
+
+# Run
+// Open index.html file on your preferred browser
+```
